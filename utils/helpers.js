@@ -24,8 +24,8 @@ const buildData = (episodeArray) =>
     const episodeDate = dateFormatter(episode.airstamp);
     acc.push({
       objectID: episode.id,
-      season: episode.season,
-      number: episode.number,
+      season: `Season ${episode.season}`,
+      number: `Episode ${episode.number}`,
       name: episode.name,
       airdate: episode.airdate,
       year: episodeDate('year'),
